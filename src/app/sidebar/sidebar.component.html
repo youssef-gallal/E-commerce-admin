@@ -1,59 +1,50 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #sidenav
-    mode="side"
-    opened
-    [class.minimized]="isMinimized"
-    class="sidenav"
-  >
+  <mat-sidenav #sidenav mode="side" opened [class.minimized]="isMinimized" class="sidenav">
     <div class="sidebar-header">
       <div class="header-logo">
-        <img src="../assets/images/logo-sm.png" alt="" />
+        <img src="../assets/images/logo-sm.png" alt="">
         <h2>Larkon</h2>
       </div>
       @if (!isMinimized) {
-      <button mat-icon-button (click)="toggleMinimize()">
-        <mat-icon>menu</mat-icon></button
-      >}
+      <button mat-icon-button (click)=" toggleMinimize()">
+        <mat-icon>menu</mat-icon>
+      </button>}
     </div>
     <mat-nav-list>
       <span class="top-tilte">general</span>
       <ul>
+
         <li>
           <a routerLink="" routerLinkActive="active">
             <mat-icon>dashboard</mat-icon>
             <span class="text">Dashboard</span>
           </a>
+
         </li>
         <li>
           <a routerLink="" routerLinkActive="active">
             <mat-icon>person</mat-icon>
-            <span class="text">profile</span></a
-          >
+            <span class="text">profile</span></a>
         </li>
         <li>
           <a routerLink="" routerLinkActive="active">
             <mat-icon>settings</mat-icon>
-            <span class="text">Category</span></a
-          >
+            <span class="text">Category</span></a>
         </li>
         <li>
           <a routerLink="" routerLinkActive="active">
             <mat-icon>info</mat-icon>
-            <span class="text">Inventory</span></a
-          >
+            <span class="text">Inventory</span></a>
         </li>
         <li>
           <a routerLink="" routerLinkActive="active">
             <mat-icon>info</mat-icon>
-            <span class="text">Orders</span></a
-          >
+            <span class="text">Orders</span></a>
         </li>
         <li>
           <a routerLink="" routerLinkActive="active">
             <mat-icon>info</mat-icon>
-            <span class="text">Purchases</span></a
-          >
+            <span class="text">Purchases</span></a>
         </li>
         <li>
           <a routerLink="" routerLinkActive="active">
@@ -78,5 +69,6 @@
     <button mat-icon-button (click)="toggleMinimize()">
       <mat-icon>menu</mat-icon>
     </button>
+
   </mat-sidenav>
 </mat-sidenav-container>

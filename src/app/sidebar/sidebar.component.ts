@@ -13,10 +13,10 @@ import { MatListModule } from '@angular/material/list';
   styleUrl: './sidebar.component.css'
 })
 
-  export class SidebarComponent {
-    isMinimized = false;
+export class SidebarComponent {
+  isMinimized = false;
 
-    toggleMinimize() {
-      this.isMinimized = !this.isMinimized;
-    }
+  toggleMinimize() {
+    this.isMinimized = !this.isMinimized;
   }
+}
