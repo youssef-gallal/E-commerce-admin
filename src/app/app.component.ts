@@ -4,11 +4,12 @@ import { HomeComponent } from "./home/home.component";
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LoginComponent } from './login/login.component';
 import { MainCategoryComponent } from "./main-category/main-category.component";
-
+// import { BrowserModule } from '@angular/platform-browser';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, SidebarComponent, LoginComponent, MainCategoryComponent],
+  imports: [RouterOutlet, HomeComponent, SidebarComponent, LoginComponent, MainCategoryComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
